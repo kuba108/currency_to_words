@@ -126,7 +126,7 @@ In your views write for example:
 
 == Missing locale?
 
-If you need locale that is not supported yet, you can easily add one. All you need to do is translated locale file and create class in /lib. 
+If you need locale that is not supported yet, you can easily add one. All you need to do is translate locale file and create class in /lib. 
 Convention is that the class has to be named [locale]Currency. 
 
 So for example EnCurrency or FrCurrency. So override or duplicate the existing class and add diffrences of your language. Thats it!
