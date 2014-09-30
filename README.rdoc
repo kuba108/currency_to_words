@@ -1,4 +1,4 @@
-= Gem currency_to_words
+= Currency to words
 
 Provides a view helper for Rails that translate a currency amount to words (eg. <tt>to_words(200)</tt> \=> 'dvě stě korun').
 
