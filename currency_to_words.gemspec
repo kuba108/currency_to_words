@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name = "currency_to_words"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Bruno Carrere"]
+  s.authors = ["Jakub Malina"]
   s.date = "2014-09-29"
   s.description = "Rails 4 helper to_words that displays a currency amount in words (eg. 'one hundred dollars')"
   s.email = "majak108@gmail.com"
@@ -15,12 +15,13 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.rdoc",
     "VERSION",
-    "lib/currency_to_words.rb"
+    "lib/currency_to_words.rb",
+    "lib/cs_currency.rb"
   ]
-  s.homepage = "http://github.com/bcarrere/currency-in-words"
+  s.homepage = "https://github.com/kuba108/currency_to_words"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "2.2.2"
   s.summary = "Rails 4 helper to_words that displays a currency amount in words (eg. 'one hundred dollars')"
 
   if s.respond_to? :specification_version then

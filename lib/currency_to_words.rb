@@ -2,6 +2,7 @@
 module CurrencyToWords
 
   require 'cs_currency'
+  require 'pl_currency'
 
   ActionView::Helpers::NumberHelper.class_eval do
 
