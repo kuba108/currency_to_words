@@ -68,6 +68,61 @@ In your views write for example:
             one: 'haléř'
             few: 'haléře'
             other: 'haléřů'
+            
+=== Polish locale
+
+  pl:
+    number:
+      currency_in_words:
+        format: '%n'
+        options_precision:
+          precision: 2
+          delimiter: ''
+          significant: false
+          strip_insignificant_zeros: false
+          separator: '.'
+          raise: false
+        connector: ' a '
+        negative_format: '(%n)'
+        skip_and: true
+        delimiter: true
+        ones: [zero, jeden, dwa, trzy, cztery, pięć, sześć, siedem, osiem, dziewięć]
+        teens: [dziesięć, jedenaście, dwanaście, trzynaście, czternaście, pietnaście, szesnaście, siedemnaście, osiemnaście, dziewiętnaście]
+        tens: [nil, nil,'dwadzieścia','trzydzieści','czterdzieści','pięćdziesiąt','sześćdziesiąt','siedemdziesiąt', 'osiemdziesiąt','dziewięćdziesiąt']
+        hundreds: [sto, dwieście, trzysta, czterysta, pięćset, sześćset, siedemset, osiemset, c]
+        thousands_ones: [_, jeden, dwa, trzy, cztery, pięć, sześć, siedem, osiem, dziewięć]
+        megs: [_, thousand, milion, bilion, trilion]
+        thousand:
+          one: 'tysiąc'
+          few: 'tysiące'
+          many: 'tysięcy'
+          other: 'tysięcy'
+        milion:
+          one: 'milion'
+          few: 'miliony'
+          many: 'milionów'
+          other: 'milionów'
+        bilion:
+          one: 'bilion'
+          few: 'biliony'
+          many: 'bilionów'
+          other: 'bilionów'
+        trilion:
+          one: 'trilion'
+          few: 'triliony'
+          many: 'trilionów'
+          other: 'trilionów'
+        currencies:
+          integer:
+            one: 'złoty'
+            few: 'złote'
+            many: 'złotych'
+            other: 'złotych'
+          decimal:
+            one: 'grosz'
+            few: 'grosze'
+            many: 'groszy'
+            other: 'groszy'
 
 == Missing locale?
 
