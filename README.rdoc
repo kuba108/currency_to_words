@@ -12,11 +12,12 @@ Add the gem to your Gemfile.
 
 == Usage
 
-Will be updated.
+Install gem and create locale file in your project where you want to provide translation from currency to words. You can use locale file from I18n files below section or create your own.
 
 == Examples
 
-Will be updated.
+In your views write for example:
+  currency_to_words(235.58)
 
 == I18n files
 
