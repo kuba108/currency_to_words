@@ -5,7 +5,7 @@ module CurrencyToWords
 
   ActionView::Helpers::NumberHelper.class_eval do
 
-    def to_words number, options = {}
+    def currency_to_words number, options = {}
       # scopes
       scope = [:number, :currency_in_words]
       options_precision_scope = [:number, :currency_in_words, :options_precision]
