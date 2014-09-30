@@ -18,6 +18,56 @@ Will be updated.
 
 Will be updated.
 
+== I18n files
+
+=== Czech locale
+  
+  cs:
+    number:
+      currency_in_words:
+        format: '%n'
+        options_precision:
+          precision: 2
+          delimiter: ''
+          significant: false
+          strip_insignificant_zeros: false
+          separator: '.'
+          raise: false
+        connector: ' a '
+        negative_format: '(%n)'
+        skip_and: true
+        ones: [nula, jedna, dvě, tři, čtyři, pět, šest, sedm, osm, devět]
+        teens: [deset, jedenáct, dvanáct, třináct, čtrnáct, patnáct, šestnáct, sedmnáct, osmnáct, devatenáct]
+        tens: [nil, nil,'dvacet','třicet','čtyřicet','padesát','šedesát','sedmdesát', 'osmdesát','devadesát']
+        hundreds: [sto, dvě stě, tři sta, čtyři sta, pět set, šest set, sedm set, osm set, devět set]
+        thousands_ones: [_, jeden, dva, tři, čtyři, pět, šest, sedm, osm, devět]
+        megs: [_, thousand, milion, bilion, trilion]
+        thousand:
+          one: 'tisíc'
+          few: 'tisíce'
+          other: 'tisíc'
+        milion:
+          one: 'milion'
+          few: 'miliony'
+          other: 'milionů'
+        bilion:
+          one: 'bilion'
+          few: 'biliony'
+          other: 'bilionů'
+        trilion:
+          one: 'trilion'
+          few: 'triliony'
+          other: 'trilionů'
+        currencies:
+          integer:
+            one: 'koruna'
+            few: 'koruny'
+            other: 'korun'
+          decimal:
+            one: 'haléř'
+            few: 'haléře'
+            other: 'haléřů'
+
 == Inspiration
 
 This project is heavily inspirated by {bcarrere/currency-in-words}[https://github.com/bcarrere/currency-in-words] and uses blocks of code from this repository.
