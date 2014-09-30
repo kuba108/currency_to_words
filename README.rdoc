@@ -69,12 +69,23 @@ In your views write for example:
             few: 'haléře'
             other: 'haléřů'
 
+== Missing locale?
+
+If you need locale that is not supported yet, you can easily add one. All you need to do is translated locale file and create class in /lib. 
+Convention is that the class has to be named [locale]Currency. 
+
+So for example EnCurrency or FrCurrency. So override or duplicate the existing class and add diffrences of your language. Thats it!
+
 == Inspiration
 
 This project is heavily inspirated by {bcarrere/currency-in-words}[https://github.com/bcarrere/currency-in-words] and uses blocks of code from this repository.
 
 Reason for creating my own repository was requirement to use I18n gem for "currency to words" translation and also for settings.
 This means, that this gem can be configured from locale file and translation is not hardcoded to source of library.
+
+== Contribution
+
+Did you created locales that is not supported here yet? Please write me e-mail if you want contribute at majak108@gmail.com.
 
 == Copyright
 
