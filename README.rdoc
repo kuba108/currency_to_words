@@ -21,6 +21,9 @@ In your views write for example:
 
 == I18n files
 
+Warning: Be sure that you are using correct syntax of arrays. I have had problem with "Argument error" after production server restart.
+Reason was that I did not have spaces in of the arrays. So the correct syntax is ...'čtyřicet', 'padesát'... and so on.
+
 === Czech locale
   
   cs:
@@ -37,11 +40,11 @@ In your views write for example:
         connector: ' a '
         negative_format: '(%n)'
         skip_and: true
-        ones: [nula, jedna, dvě, tři, čtyři, pět, šest, sedm, osm, devět]
-        teens: [deset, jedenáct, dvanáct, třináct, čtrnáct, patnáct, šestnáct, sedmnáct, osmnáct, devatenáct]
-        tens: [nil, nil,'dvacet','třicet','čtyřicet','padesát','šedesát','sedmdesát', 'osmdesát','devadesát']
-        hundreds: [sto, dvě stě, tři sta, čtyři sta, pět set, šest set, sedm set, osm set, devět set]
-        thousands_ones: [_, jeden, dva, tři, čtyři, pět, šest, sedm, osm, devět]
+        ones: ['nula', 'jedna', 'dvě', 'tři', 'čtyři', 'pět', 'šest', 'sedm', 'osm', 'devět']
+        teens: ['deset', 'jedenáct', 'dvanáct', 'třináct', 'čtrnáct', 'patnáct', 'šestnáct', 'sedmnáct', 'osmnáct', 'devatenáct']
+        tens: [nil, nil, 'dvacet', 'třicet', 'čtyřicet', 'padesát', 'šedesát', 'sedmdesát', 'osmdesát', 'devadesát']
+        hundreds: ['sto', 'dvě stě', 'tři sta', 'čtyři sta', 'pět set', 'šest set', 'sedm set', 'osm set', 'devět set']
+        thousands_ones: ['', 'jeden', 'dva', 'tři', 'čtyři', 'pět', 'šest', 'sedm', 'osm', 'devět']
         megs: [_, thousand, milion, bilion, trilion]
         thousand:
           one: 'tisíc'
@@ -86,12 +89,12 @@ In your views write for example:
         negative_format: '(%n)'
         skip_and: true
         delimiter: true
-        ones: [zero, jeden, dwa, trzy, cztery, pięć, sześć, siedem, osiem, dziewięć]
-        teens: [dziesięć, jedenaście, dwanaście, trzynaście, czternaście, pietnaście, szesnaście, siedemnaście, osiemnaście, dziewiętnaście]
-        tens: [nil, nil,'dwadzieścia','trzydzieści','czterdzieści','pięćdziesiąt','sześćdziesiąt','siedemdziesiąt', 'osiemdziesiąt','dziewięćdziesiąt']
-        hundreds: [sto, dwieście, trzysta, czterysta, pięćset, sześćset, siedemset, osiemset, c]
-        thousands_ones: [_, jeden, dwa, trzy, cztery, pięć, sześć, siedem, osiem, dziewięć]
-        megs: [_, thousand, milion, bilion, trilion]
+        ones: ['zero', 'jeden', 'dwa', 'trzy', 'cztery', 'pięć', 'sześć', 'siedem', 'osiem', 'dziewięć']
+        teens: ['dziesięć', 'jedenaście', 'dwanaście', 'trzynaście', 'czternaście', 'pietnaście', 'szesnaście', 'siedemnaście', 'osiemnaście', 'dziewiętnaście']
+        tens: [nil, nil, 'dwadzieścia', 'trzydzieści', 'czterdzieści', 'pięćdziesiąt', 'sześćdziesiąt', 'siedemdziesiąt', 'osiemdziesiąt', 'dziewięćdziesiąt']
+        hundreds: ['sto', 'dwieście', 'trzysta', 'czterysta', 'pięćset', 'sześćset', 'siedemset', 'osiemset', 'dziewięćset']
+        thousands_ones: ['', 'jeden', 'dwa', 'trzy', 'cztery', 'pięć', 'sześć', 'siedem', 'osiem', 'dziewięć']
+        megs: ['', 'thousand', 'milion', 'bilion', 'trilion']
         thousand:
           one: 'tysiąc'
           few: 'tysiące'
