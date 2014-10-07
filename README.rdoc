@@ -22,7 +22,7 @@ In your views write for example:
 == I18n files
 
 Warning: Be sure that you are using correct syntax of arrays. I have had problem with "Argument error" after production server restart.
-Reason was that I did not have spaces in of the arrays. So the correct syntax is ...'čtyřicet', 'padesát'... and so on.
+Reason was that I did not have spaces in the arrays. So the correct syntax is ...'čtyřicet', 'padesát'... and so on.
 
 === Czech locale
   
